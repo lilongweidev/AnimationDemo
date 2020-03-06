@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--普通显示隐藏-->
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_logo"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="普通显示"
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="普通隐藏"
+            android:id="@+id/btn_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--透明度显示隐藏-->
+    <ImageView
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_alpha_logo"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="透明度显示"
+            android:id="@+id/btn_alpha_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="透明度隐藏"
+            android:id="@+id/btn_alpha_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--缩放显示隐藏-->
+    <ImageView
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_scale_logo"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="放大显示"
+            android:id="@+id/btn_scale_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="缩小隐藏"
+            android:id="@+id/btn_scale_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <!--位移显示隐藏-->
+    <ImageView
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_translate_logo"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="位移显示(向上)"
+            android:id="@+id/btn_translate_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="位移隐藏(向下)"
+            android:id="@+id/btn_translate_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
